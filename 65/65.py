@@ -19,11 +19,10 @@ def ReduceFraction( sieve, frac ):
     upper = frac[0]
     lower = frac[1]
     for p in sieve:
-        if upper % p == 0 and lower % p == 0:
-            # We use floor of sqrt(lower) since lower will always be smaller than upper
-            while upper % p == 0 and lower % p == 0 and math.floor(math.sqrt(lower)) > p:
-                upper = upper / p
-                lower = lower / p
+		# We use floor of sqrt(lower) since lower will always be smaller than upper
+		while upper % p == 0 and lower % p == 0 and math.floor(math.sqrt(lower)) > p:
+			upper = upper / p
+			lower = lower / p
     return (upper, lower)
 
 # Convert whole + num/den into an improper fraction
