@@ -1,4 +1,4 @@
-Haskell-Euler
+Rosetta Euler
 -------
 
-Learning Haskell by doing Project Euler problems.
+Project Euler solutions in various languages.
