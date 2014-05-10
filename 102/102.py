@@ -20,7 +20,7 @@ def InTri(x0, y0, x1, y1, x2, y2):
 
 
 allLines = 0
-with open("C:\\builds\\triangles.txt") as f_tri:
+with open("triangles.txt") as f_tri:
     allLines = [line.strip() for line in f_tri.readlines()]
 
 print len(allLines)
